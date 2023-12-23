@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Color Variables */
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: #ff5722;
+    --text-color: #333;
+    --background-color: #f0f0f0; 
+    --button-hover: #388e3c;
+  }
+  
+  /* body styles */
+  body{
+    background-color: var(--background-color);
+  }
+  
+
+  /* Header styles */
+  .App_header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Header content styles */
+  .header_content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .App_header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color:white;
+  }
+  
+  .App_header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+  
+  /* Planner section styles */
+  .App_container {
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  
+  .App_container h1 {
+    text-align: center;
+    color: var(--background-color);
+    margin-bottom: 20px;
+  }
+  .App_container_content{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    gap:1rem;
+  }
+
+  /* Input styles */
+  input[type="text"],
+  input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  input[type="text"],
+  input[type="number"]:focus{
+    outline: none;
+    border-color: #16741a;
+  }
+
+  /* Button styles */
+  .App_add_data_btn {
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+  }
+  
+ .App_add_data_btn:hover {
+    background-color: var(--button-hover);
+  }
+  
+  /* Planner entry styles */
+  .App_conatiner_subject_show {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin:auto;
+    margin-bottom: 1rem;
+  }
+  
+  /* Increment and decrement button styles */
+  .App_increment_btn,
+  .App_decrement_btn {
+    padding: 8px 12px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .App_increment_btn{
+    background-color: var(--primary-color);
+    margin-left: 28rem;
+  }
+  .App_decrement_btn{
+    background-color: #f44336;
+    margin-left: 2rem;
+  }
+  .App_increment_btn:hover,
+  .App_decrement_btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 10px rgb(199, 199, 199);
+  }
+  
+
+  /* carasouel style */
+  .carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    animation: carousel-animation 10s infinite;
+  }
+  
+  .slide {
+    min-width: 100%;
+    opacity: 0;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  @keyframes carousel-animation {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    20%, 80% {
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  
